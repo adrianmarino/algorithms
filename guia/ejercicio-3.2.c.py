@@ -14,6 +14,12 @@ def fact(number):
         return number * fact(number - 1)
 
 
+def nCr(n, r):
+    return fact(n) / (fact(r) * fact(n - r))
+
+
 if __name__ == '__main__':
-    number = int(sys.argv[1])
-    print(f'{number}! is {fact(number)}')
+    n = int(sys.argv[1])
+
+    for i in range(1, n):
+        print(f'{n}C{i} => {nCr(n, i)}')
