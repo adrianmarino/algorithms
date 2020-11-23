@@ -7,7 +7,5 @@ def multiply(a, b):
 
 
 if __name__ == '__main__':
-    a = int(sys.argv[1])
-    b = int(sys.argv[2])
-
+    a, b = int(sys.argv[1]), int(sys.argv[2])
     print(f'{a} * {b} => {multiply(a, b)}')
