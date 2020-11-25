@@ -2,13 +2,15 @@
 import sys
 
 
-def line(times, char='*'):
+def repeat(times, char):
     output = ''
-    for _ in range(0, times):
+    i = 0
+    while i < times:
         output += char
+        i += 1
     return output
 
 
 if __name__ == '__main__':
     n = int(sys.argv[1])
-    print(line(n))
+    print(repeat(n, '*'))
