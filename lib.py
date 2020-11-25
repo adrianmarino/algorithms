@@ -1,7 +1,3 @@
-#!/bin/python
-import sys
-
-
 def sum(numbers):
     result = 0
     i = 0
@@ -26,7 +22,3 @@ def repeat(number, times):
 
 def multiply(a, b):
     return sum(repeat(a, b))
-
-
-a, b = int(sys.argv[1]), int(sys.argv[2])
-print(f'{a} * {b} => {multiply(a, b)}')

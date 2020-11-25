@@ -3,7 +3,11 @@ import sys
 
 
 def dividers(number_a):
-    return [number_b for number_b in range(1, number_a) if not number_a % number_b]
+    result = []
+    for number_b in range(1, number_a):
+        if not number_a % number_b:
+            result.append(number_b)
+    return result
 
 
 def is_perfect(number):

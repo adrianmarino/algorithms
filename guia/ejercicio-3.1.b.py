@@ -2,15 +2,40 @@
 import sys
 
 
+def sum(numbers):
+    result = 0
+    i = 0
+
+    while i < len(numbers):
+        result += numbers[i]
+        i += 1
+
+    return result
+
+
+def repeat(number, times):
+    result = []
+    i = 0
+
+    while i < times:
+        result.append(number)
+        i += 1
+
+    return result
+
+
 def multiply(a, b):
-    return sum([a for _ in range(0, b)])
+    return sum(repeat(a, b))
 
 
 def pow(number, pot):
     result = number
-    for _ in range(0, pot - 1):
+    i = 0
+
+    while i < (pot - 1):
         result = multiply(result, number)
-        print(result)
+        i += 1
+
     return result
 
 

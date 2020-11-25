@@ -2,16 +2,8 @@
 import sys
 
 
-def fact(number):
-    """
-    Factorial recursive implementation.
-    :param number: a number.
-    :return: factorial.
-    """
-    if number == 1:
-        return number
-    else:
-        return number * fact(number - 1)
+def fact(num):
+    return num if num == 1 else num * fact(num - 1)
 
 
 def nCr(n, r):
@@ -22,4 +14,4 @@ if __name__ == '__main__':
     n = int(sys.argv[1])
     r = int(sys.argv[2])
 
-    print(f'{n}C{r} => {nCr(n, r)}')
+    print(f'{n}C{r} => {nCr(n, r):.0f}')
