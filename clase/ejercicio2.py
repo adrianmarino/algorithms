@@ -7,10 +7,10 @@ def show(fahr, cel):
 
 
 def fahr_to_cel_table(fahr, step, max):
-    i = fahr
-    while i <= max:
-        show(i, fahr_to_cel(i))
-        i += step
+    curr = fahr
+    while curr <= max:
+        show(curr, fahr_to_cel(curr))
+        curr += step
 
 
 fahr_to_cel_table(0, 20, 100)

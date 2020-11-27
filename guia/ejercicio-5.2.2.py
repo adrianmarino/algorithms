@@ -23,7 +23,7 @@ def index_of(element, list):
 
 def all_under(element, list):
     """
-    Returns all list elements that are less than element.
+    Returns all list elements that are less than.
     - Order: O(log(n))
     """
     return list[:index_of(element, numbers)]
