@@ -26,4 +26,4 @@ if __name__ == '__main__':
 
     perfect_numbers = [str(number) for number in range(1, max_number + 1) if is_perfect(number)]
 
-    print(f'Perfect number: {", ".join(perfect_numbers)}')
+    print(f'From 1 to {max_number} -> Perfect numbers: {", ".join(perfect_numbers)}')
