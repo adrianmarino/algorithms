@@ -10,9 +10,15 @@ def dividers(number_a):
     return result
 
 
+def sum(numbers):
+    result = 0
+    for n in numbers:
+        result += n
+    return result
+
+
 def is_perfect(number):
-    d = dividers(number)
-    return number == sum(d)
+    return number == sum(dividers(number))
 
 
 if __name__ == '__main__':
