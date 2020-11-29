@@ -1,3 +1,4 @@
+#!/bin/python
 """
 Ejercicio 1: Usando el TAD Pila implementar una función reversa que dada una lista de vuelta sus elementos.
 

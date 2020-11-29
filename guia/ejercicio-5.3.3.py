@@ -10,6 +10,4 @@ def is_prime(number_a):
 
 
 number = int(sys.argv[1])
-
-
 print(f'{number} {"is" if is_prime(number) else "not is"} prime')

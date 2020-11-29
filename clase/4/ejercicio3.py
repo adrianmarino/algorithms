@@ -1,3 +1,4 @@
+#!/bin/python
 """
 Ejercicio 3: Implementar una función en Python que, usando Divide & Conquer, encuentre el máximo de
              una lista de enteros positivos:

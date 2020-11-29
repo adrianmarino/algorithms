@@ -1,3 +1,4 @@
+#!/bin/python
 """
 Ejercicio 2: Implementar en Python una función recursiva que sume todos los elementos de una lista.
 """

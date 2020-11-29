@@ -1,3 +1,4 @@
+#!/bin/python
 """
 Ejercicio 2: Usando el TAD Pila implementar una función que dado un String que contiene una única aparición
              del caracter '#' determine si es o no capicua:
