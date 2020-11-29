@@ -9,6 +9,7 @@ def characters_count(words):
     return count
 
 
-if __name__ == '__main__':
-    words = sys.argv[1:]
-    print(f'"{" ".join(words)}" -> {characters_count(words)}')
+words = sys.argv[1:]
+count = characters_count(words)
+
+print(f'{" ".join(words)} -> {count}')

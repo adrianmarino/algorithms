@@ -1,25 +1,25 @@
 #!/bin/python
 def max_plateau(numbers):
-    curr_number, max_number = None, 0
-    max_count = curr_count = 0
+    max_num = None
+    max_count = count = i = 0
 
-    for number in numbers:
-        if curr_number is None:
-            curr_number = number
+    while i < len(numbers):
+        cur_num = numbers[i]
+        next_num = numbers[i + 1] if i + 1 < len(numbers) else None
 
-        if curr_number != number:
-            if curr_count > max_count:
-                max_count = curr_count
-                max_number = curr_number
+        count += 1
 
-            curr_number = number
-            curr_count = 0
+        if next_num != cur_num:
+            if count > max_count:
+                max_count = count
+                max_num = cur_num
+            count = 0
 
-        curr_count += 1
+        i += 1
 
-    return max_number, max_count
+    return max_num, max_count
 
 
-numbers = [1, 1, 2, 6, 6, 6, 3, 3]
+numbers = [1, 1, 2, 6, 6, 6, 3, 3, 3, 3]
 num, long = max_plateau(numbers)
-print(f'Max plateau -> num: {6} , long: {long} ')
+print(f'Max plateau -> num: {num} , long: {long} ')
