@@ -2,9 +2,12 @@
 import sys
 
 
-def is_prime(number_a):
-    for number_b in range(2, number_a):
-        if not number_a % number_b:
+def is_prime(number):
+    """
+    Order: O(n ** 1/2)
+    """
+    for num in range(2, round(number ** 0.5)):
+        if not num % number:
             return False
     return True
 
