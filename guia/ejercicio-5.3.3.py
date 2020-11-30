@@ -13,4 +13,4 @@ def is_prime(number):
 
 
 number = int(sys.argv[1])
-print(f'{number} {"is" if is_prime(number) else "not is"} prime')
+print(f'{number} is {"" if is_prime(number) else "not"} prime')
