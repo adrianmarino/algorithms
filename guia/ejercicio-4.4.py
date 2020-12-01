@@ -4,6 +4,9 @@ import sys
 
 
 def min(numbers):
+    """
+    Order: O(n)
+    """
     min_num = math.inf
     for num in numbers:
         if num < min_num:
@@ -12,6 +15,9 @@ def min(numbers):
 
 
 def max(numbers):
+    """
+    Order: O(n)
+    """
     max_num = -math.inf
     for num in numbers:
         if num > max_num:
@@ -20,6 +26,9 @@ def max(numbers):
 
 
 def sum(numbers):
+    """
+    Order: O(n)
+    """
     result = 0
     for num in numbers:
         result += num
@@ -27,6 +36,9 @@ def sum(numbers):
 
 
 def mean(numbers):
+    """
+    Order: O(n)
+    """
     return sum(numbers) / len(numbers)
 
 

@@ -3,6 +3,9 @@ import sys
 
 
 def repeat(times, char):
+    """
+    Order: O(n)
+    """
     output = ''
     i = 0
     while i < times:

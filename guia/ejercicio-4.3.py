@@ -1,5 +1,10 @@
 #!/bin/python
+
+
 def max_plateau(numbers):
+    """
+    Order: O(n)
+    """
     max_num = None
     max_count = count = i = 0
 
@@ -20,6 +25,6 @@ def max_plateau(numbers):
     return max_num, max_count
 
 
-numbers = [1, 1, 2, 6, 6, 6, 3, 3, 3, 3]
+numbers = [1, 1, 2, 6, 6, 6, 3, 3, 3]
 num, long = max_plateau(numbers)
 print(f'Max plateau -> num: {num} , long: {long} ')

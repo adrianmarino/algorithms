@@ -1,5 +1,7 @@
 #!/bin/python
-
+"""
+Calcular la mediana de una lista de enteros en orden O(n^2).
+"""
 
 def swap(list, i, j):
     value = list[i]

@@ -1,5 +1,7 @@
 #!/bin/python
-
+"""
+Calcular la media de una lista de enteros en orden O(n).
+"""
 
 def sum(numbers):
     """

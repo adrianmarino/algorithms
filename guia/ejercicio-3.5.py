@@ -12,12 +12,20 @@ def reserve(string):
 
 
 def is_palindrome1(word):
+    """
+    Order: O(n)
+    """
     return word == reserve(word)
 
 
 def is_palindrome2(word):
+    """
+    Order: O(n/2)
+    """
     for i in range(0, len(word) // 2):
-        if word[i] != word[-i - 1]:
+        left_char = word[i]
+        right_char = word[-i - 1]
+        if left_char != right_char:
             return False
     return True
 

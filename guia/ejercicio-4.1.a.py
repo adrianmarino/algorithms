@@ -3,6 +3,9 @@ import sys
 
 
 def characters_count(words):
+    """
+    Order: O(n)
+    """
     count = 0
     for word in words:
         count += len(word)

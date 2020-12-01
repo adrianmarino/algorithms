@@ -5,6 +5,7 @@ import sys
 def fact(number):
     """
     Factorial recursive implementation.
+    Order: O(n)
     :param number: a number.
     :return: factorial.
     """
