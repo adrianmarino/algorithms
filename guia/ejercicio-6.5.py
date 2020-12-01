@@ -1,6 +1,6 @@
 #!/bin/python
 """
-Programar la función recursiva cantidad_ocurrencias(n,l) que dada una lista de
+Programar una función recursiva en Python cantidad_ocurrencias(n,l) que dada una lista de
 enteros l y un número n, devuelva la cantidad de ocurrencias de n en l.
 """
 

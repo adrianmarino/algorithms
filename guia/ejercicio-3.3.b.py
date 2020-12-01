@@ -37,14 +37,14 @@ class Square:
     def draw(self):
         output = self.__draw_line_with_borders(self.top_left, self.top_right)
 
-        for _ in range(0, self.size - 2):
+        for _ in range(self.size - 2):
             output += self.__draw_vertical_row()
 
         return output + self.__draw_line_with_borders(self.button_left, self.button_right)
 
     def __draw_vertical_row(self):
         output = self.ver
-        for _ in range(0, self.size - 2):
+        for _ in range(self.size - 2):
             output += ' '
         output += self.ver + '\n'
         return output

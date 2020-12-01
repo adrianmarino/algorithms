@@ -22,7 +22,7 @@ def is_palindrome2(word):
     """
     Order: O(n/2)
     """
-    for i in range(0, len(word) // 2):
+    for i in range(len(word) // 2):
         left_char = word[i]
         right_char = word[-i - 1]
         if left_char != right_char:

@@ -3,7 +3,7 @@ import sys
 
 
 def fact(num):
-    return num if num == 1 else num * fact(num - 1)
+    return 1 if num == 0 else num * fact(num - 1)
 
 
 def nCr(n, r):
