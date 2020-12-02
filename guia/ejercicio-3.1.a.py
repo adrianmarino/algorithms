@@ -7,8 +7,8 @@ def sum(numbers):
     i = 0
 
     while i < len(numbers):
-        result += numbers[i]
-        i += 1
+        result = result + numbers[i]
+        i = i + 1
 
     return result
 
