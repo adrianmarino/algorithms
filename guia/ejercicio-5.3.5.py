@@ -3,6 +3,8 @@
 Dada una lista de 1s y 0s representando un número en base binaria, obtener el número correspondiente en base decimal.
 
 Order: O(n)
+
+http://recursostic.educacion.es/secundaria/edad/4esotecnologia/quincena5/4q2_contenidos_2c.htm
 """
 
 

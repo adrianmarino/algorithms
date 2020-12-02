@@ -10,9 +10,6 @@ def fact(num):
 
 
 def nCr(n, r):
-    """
-    Order: O(n + r + (n -r))
-    """
     return fact(n) / (fact(r) * fact(n - r))
 
 

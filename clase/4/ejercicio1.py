@@ -6,7 +6,7 @@ import sys
 
 
 def power(num, num_power):
-    return 1 if num_power == 0 else num + power(num, num_power - 1)
+    return 1 if num_power == 0 else num * power(num, num_power - 1)
 
 
 num, num_power = int(sys.argv[1]), int(sys.argv[2])
