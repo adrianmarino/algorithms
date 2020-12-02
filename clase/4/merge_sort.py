@@ -37,20 +37,16 @@ def merge_sort(list):
     Description: Sort the list in ascending order.
     - Order: O(n * log(n))
     """
-    return merge_sort_(list, 0, len(list))
+    if len(list) == 1:
+        return list
+
+    mid = len(list) // 2
+    left = merge_sort(list[:mid])
+    right = merge_sort(list[mid:])
+    return merge(left, right)
 
 
-def merge_sort_(list, low, high):
-    if low < high:
-        mid = low + (high - low) // 2
-        list1 = merge_sort_(list, low, mid)
-        list2 = merge_sort_(list, mid + 1, high)
-        return merge(list1, list2)
-    else:
-        return list[low:high + 1]
-
-
-numbers = list(range(1, 27))
+numbers = list(range(1, 11))
 random.shuffle(numbers)
-print('Input: ', numbers)
-print('Output: ', merge_sort(numbers))
+print('Input:', numbers)
+print('Output:', merge_sort(numbers))
