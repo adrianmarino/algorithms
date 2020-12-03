@@ -7,7 +7,10 @@ import sys
 
 
 def is_event(number):
-    return not number if number <= 1 else is_event(number - 2)
+    if number <= 1:
+        return not number
+    else:
+        return is_event(number - 2)
 
 
 number = int(sys.argv[1])

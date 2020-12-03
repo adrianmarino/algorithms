@@ -8,5 +8,4 @@ def sum(numbers):
     return 0 if len(numbers) == 0 else numbers[0] + sum(numbers[1:])
 
 
-numbers = [1, 1, 2, 6, 6, 6, 3, 3]
-print(f'sum: {sum(numbers)}')
+print(sum([1, 1, 2, 6, 3, 3]) == 16)

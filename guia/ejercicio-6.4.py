@@ -15,5 +15,4 @@ def multiply(numbers):
         return numbers[0] * multiply(numbers[1:])
 
 
-numbers = [2, 3, 4, 5]
-print(f'multiply({numbers}) => {multiply(numbers)}')
+print(multiply([2, 3, 4, 5]) == 120)

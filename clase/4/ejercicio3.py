@@ -7,14 +7,16 @@ Ejercicio 3: Implementar una función que, usando Divide & Conquer, encuentre el
 """
 
 
-def max(numbers):
-    if len(numbers) == 0:
+def max(list):
+    if len(list) == 0:
         return 0
     else:
-        num = numbers[0]
-        sub_max = max(numbers[1:])
-        return num if num > sub_max else sub_max
+        head = list[0]
+        max_tail = max(list[1:])
+        return head if head > max_tail else max_tail
 
 
-numbers = [10, 1, 1, 2, 6, 6, 6, 3, 3]
-print(f'List: {numbers} ->  Max: {max(numbers)}')
+print(max([10, 1, 2, 6, 6, 3, 3]) == 10)
+print(max([2, 3]) == 3)
+print(max([3]) == 3)
+print(max([]) == 0)
