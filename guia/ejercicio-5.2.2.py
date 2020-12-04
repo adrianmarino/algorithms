@@ -4,7 +4,7 @@ def index_of(element, list):
     """
     Binary search: Search element index in a given list.
     - Precondition: list must be sorted ascending.
-    - Order: O(log(n)) < O(n)
+    - Order: O(log(n))
     """
     size = len(list)
     if size == 0:

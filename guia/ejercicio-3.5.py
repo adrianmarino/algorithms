@@ -3,6 +3,9 @@ import sys
 
 
 def reserve(string):
+    """
+    Order: O(n)
+    """
     reserved_string = ''
     index = len(string) - 1
     while index >= 0:

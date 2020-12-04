@@ -3,17 +3,23 @@ import sys
 
 
 def sum(numbers):
+    """
+    Order: O(len(numbers))
+    """
     result = 0
     i = 0
 
     while i < len(numbers):
-        result = result + numbers[i]
+        result += numbers[i]
         i = i + 1
 
     return result
 
 
 def repeat(number, times):
+    """
+    Order: O(times)
+    """
     result = []
     i = 0
 
@@ -25,6 +31,9 @@ def repeat(number, times):
 
 
 def multiply(a, b):
+    """
+    Order: O(2b)
+    """
     return sum(repeat(a, b))
 
 

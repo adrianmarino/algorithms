@@ -3,6 +3,9 @@ import sys
 
 
 def sum(numbers):
+    """
+    Order: O(len(numbers))
+    """
     result = 0
     i = 0
 
@@ -14,6 +17,9 @@ def sum(numbers):
 
 
 def repeat(number, times):
+    """
+    Order: O(times)
+    """
     result = []
     i = 0
 
@@ -25,10 +31,16 @@ def repeat(number, times):
 
 
 def multiply(a, b):
+    """
+    Order: O(2b)
+    """
     return sum(repeat(a, b))
 
 
 def pow(number, pot):
+    """
+    Order: O(n^2)
+    """
     result = number
     i = 0
 

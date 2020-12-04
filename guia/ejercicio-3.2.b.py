@@ -3,10 +3,16 @@ import sys
 
 
 def fact(num):
+    """
+    Order: O(n)
+    """
     return 1 if num == 0 else num * fact(num - 1)
 
 
 def nCr(n, r):
+    """
+    Order: O(n + r + (n-r)) => O(n)
+    """
     return fact(n) / (fact(r) * fact(n - r))
 
 
