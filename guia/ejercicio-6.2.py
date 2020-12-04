@@ -11,9 +11,14 @@ Programar una función recursiva en Python fibonac
 
 
 def fibonacci(n):
-    # Son dos casos base:
-    # - Si se achica en 1, termina siendo 0.
-    # - Si se achica en 2, termina siendo 1 .
+    """
+    Desc: Son dos casos base:
+    - Si se achica en 1, termina siendo 0.
+    - Si se achica en 2, termina siendo 1 .
+
+    Order: O(2^n). Por que cada llamada llama a dos veces otro Fibonacci.
+    """
+
     if n <= 1:
         return n
     else:

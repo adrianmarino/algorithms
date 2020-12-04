@@ -1,6 +1,10 @@
 #!/bin/python
 
+
 def max(list):
+    """
+    Order: O(n)
+    """
     if len(list) == 1:
         return list[0]
     else:

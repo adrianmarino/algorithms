@@ -8,7 +8,7 @@ def is_palindrome(word):
     i = 0
     last = len(word) - 1
     while i <= last // 2:
-        # print(word, word[i], word[last - i])
+        # print(word, word[i], word[i - i])
         if word[i] != word[last - i]:
             return False
         i += 1

@@ -1,6 +1,10 @@
 #!/bin/python
 
+
 def multiply(list):
+    """
+    Order: O(n)
+    """
     if len(list) == 0:
         return 0
     elif len(list) == 1:

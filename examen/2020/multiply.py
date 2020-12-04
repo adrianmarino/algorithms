@@ -1,10 +1,21 @@
 #!/bin/python
 
+
 def multiply(a, b):
-    return multiply_aux(a, b) if a < b else multiply_aux(b, a)
+    """
+    Si a < b => O(b)
+    Si a > b => O(a)
+    """
+    if a < b:
+        return multiply_aux(a, b)
+    else:
+        return multiply_aux(b, a)
 
 
 def multiply_aux(a, b):
+    """
+    Order: O(b)
+    """
     if b == 0:
         return 0
     else:

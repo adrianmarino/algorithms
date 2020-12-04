@@ -1,6 +1,10 @@
 #!/bin/python
 
+
 def occurs(list, element):
+    """
+    Order: O(n)
+    """
     if len(list) == 0:
         return 0
     else:

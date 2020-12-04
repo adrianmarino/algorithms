@@ -1,6 +1,10 @@
 #!/bin/python
 
+
 def max_plateau(list):
+    """
+    Order: O(n)
+    """
     element = None
     index = max_count = curr_count = 0
 

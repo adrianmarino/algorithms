@@ -6,6 +6,9 @@ par (i.e., que devuelva True si es par y False en caso contrario).
 
 
 def is_event(number):
+    """
+    Order: O(n)
+    """
     if number == 0:
         return True
     elif number == 1:

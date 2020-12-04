@@ -1,6 +1,9 @@
 #!/bin/python
 
 def power_of(number, power):
+    """
+    Order: O(power)
+    """
     if power == 0:
         return 1
     else:
