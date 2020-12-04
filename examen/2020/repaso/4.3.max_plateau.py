@@ -3,25 +3,26 @@
 
 def max_plateau(list):
     """
-    Order: O(n)
+    Orden: O(n)
     """
     element = None
-    index = max_count = curr_count = 0
+    i = max_long = long = 0
 
-    while index < len(list):
-        curr_count += 1
+    while i < len(list):
+        long += 1
 
-        current = list[index]
-        next = list[index + 1] if index + 1 < len(list) else None
-        index += 1
+        current = list[i]
+        next = list[i + 1] if i + 1 < len(list) else None
 
         if current != next:
-            if curr_count > max_count:
+            if long > max_long:
                 element = current
-                max_count = curr_count
-            curr_count = 0
+                max_long = long
+            long = 0
 
-    return element, max_count
+        i += 1
+
+    return element, max_long
 
 
 def assert_equal(expected_value, current_value, label):

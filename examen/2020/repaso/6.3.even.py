@@ -7,14 +7,14 @@ par (i.e., que devuelva True si es par y False en caso contrario).
 
 def is_event(number):
     """
-    Order: O(n)
+    Order:
     """
     if number == 0:
         return True
     elif number == 1:
         return False
     else:
-        return is_event(number - 2)
+        return is_event(m - 2)
 
 
 def assert_equal(expected, current):
